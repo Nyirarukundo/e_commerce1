@@ -1,0 +1,221 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 50px;
+}
+.header-icons a {
+    margin-left: 10px;
+    color: rgb(12, 1, 1);
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: orange;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+
+a:hover {
+    background-color: #f0f0f0; /* Light grey background on hover */
+    border-color: #007BFF; /* Blue border on hover */
+}
+
+
+/* Search Bar */
+/* Style for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px; /* You can adjust the width as needed */
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+    border-color:#4CAF50; /* Green border when focused */
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.2);
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color:orange; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8e8dc; /* Light peach background */
+    padding: 50px 20px;
+    gap: 20%; /* Space between text and image */
+}
+
+/* Adjust text styles */
+.hero h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Style for the image */
+.hero img {
+    height: 500px; /* Medium height */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+/* Categories Section */
+.categories {
+    text-align: center;
+    padding: 10px;
+}
+
+.categories h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    
+}
+
+.category {
+    padding: 10px 15px;
+    background: #e0e0e0;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category:hover {
+    background: #ccc;
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+
+
+/* Categories Section */
+.categories {
+    text-align: center;
+    padding: 80px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    
+}
+
+.category {
+    
+
+    text-decoration: none; /* Removes underline */
+        color: white; /* Text color */
+        font-size: 16px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        display: inline-block;
+        text-align: center;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.2s;
+}
+
+.red { background-color: #e74c3c; }
+.green { background-color: #2ecc71; }
+.beige { background-color: #f5cba7; color: black; }
+.orange { background-color: #e67e22; }
+.blue { background-color: #3498db; }
+.yellow { background-color: #f1c40f; color: black; }
+/* products */
+.products {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between products */
+    flex-wrap: wrap; /* Allow products to wrap to the next line if necessary */
+    margin: 20px; /* Add some space around the section */
+}
+
+.product {
+    width: 23%; /* Set the width to control the size of the items */
+    text-align: center;
+}
+
+.product img {
+    width: 200px; /* Set a fixed width for all images */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: contain; /* Preserve aspect ratio and ensure image is fully visible */
+    margin-bottom: 10px; /* Add space between the image and text */
+}
+
+.product h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product p {
+    font-size: 16px;
+    color: #555; /* Slightly lighter color for the price */
+}
